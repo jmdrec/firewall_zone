@@ -1,21 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaImage } from 'react-icons/fa';
+import Image from 'next/image';
 
 const galleryImages = [
-  { id: 1, title: 'Training Lab 1', description: 'Cisco Router Lab' },
-  { id: 2, title: 'Training Lab 2', description: 'Switch Configuration Lab' },
-  { id: 3, title: 'Classroom Session', description: 'Live CCNA Training' },
-  { id: 4, title: 'Hands-on Practice', description: 'Students in Lab' },
-  { id: 5, title: 'Certificate Ceremony', description: 'CCNA Graduates' },
-  { id: 6, title: 'Lab Equipment', description: 'Firewall Devices' },
-  { id: 7, title: 'Online Training', description: 'Virtual Lab Session' },
-  { id: 8, title: 'Group Training', description: 'Corporate Batch' },
-  { id: 9, title: 'Practical Session', description: 'Network Setup' },
-  { id: 10, title: 'Faculty Team', description: 'Expert Trainers' },
-  { id: 11, title: 'Institute Building', description: 'Firewall Zone Campus' },
-  { id: 12, title: 'Student Success', description: 'Placement Drive' },
+  { id: 1, src: '/gallery/firewall-networking-1.jpeg', title: 'Training Lab 1', description: 'Cisco Router Lab' },
+  { id: 2, src: '/gallery/empowering-1.png', title: 'Empowering Future Professionals', description: 'Real world training' },
+  { id: 3, src: '/gallery/cyber-security-1.jpg', title: 'Cyber Security Course', description: 'Classroom training' },
+  { id: 4, src: '/gallery/networking-software-1.png', title: 'Networking & Software', description: 'Hands-on labs' },
+  { id: 5, src: '/gallery/class-1.jpeg', title: 'Classroom Session', description: 'Live CCNA Training' },
+  { id: 6, src: '/gallery/students-1.jpeg', title: 'Students', description: 'Student batches' },
+  { id: 7, src: '/gallery/cybersecurity-cert-1.png', title: 'Certification', description: 'Enroll now' },
+  { id: 8, src: '/gallery/best-networking-1.png', title: 'Beginner Courses', description: 'Best networking courses' },
+  { id: 9, src: '/gallery/empowering-2.png', title: 'Empowering', description: 'Career focused training' },
+  { id: 10, src: '/gallery/firewall-zone-networking.png', title: 'Firewall Zone', description: 'Institute overview' },
+  { id: 11, src: '/gallery/empowering-1.webp', title: 'Empowering (webp)', description: 'Hero slider image' },
+  { id: 12, src: '/gallery/empowering-2.webp', title: 'Empowering (webp 2)', description: 'Hero slider variant' },
 ];
 
 export default function Gallery() {
@@ -49,17 +49,19 @@ export default function Gallery() {
               className="group cursor-pointer"
             >
               <div className="relative bg-background border border-border rounded-xl overflow-hidden aspect-square hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
-                {/* Placeholder for image - User will add actual images */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 flex flex-col items-center justify-center p-4 group-hover:from-primary/20 group-hover:to-secondary/20 transition-all">
-                  <FaImage className="text-4xl text-gray-500 group-hover:text-primary transition-colors mb-2" />
-                  <div className="text-sm font-semibold text-gray-500 group-hover:text-foreground transition-colors text-center">
+                {/* Gallery image */}
+                <Image src={image.src} alt={image.title} fill className="object-cover" />
+
+                {/* Caption (visible on hover) */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/25">
+                  <div className="text-sm font-semibold text-white text-center">
                     {image.title}
                   </div>
-                  <div className="text-xs text-gray-400 text-center mt-1">
+                  <div className="text-xs text-gray-200 text-center mt-1">
                     {image.description}
                   </div>
                 </div>
-                
+
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300"></div>
               </div>

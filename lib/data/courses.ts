@@ -11,7 +11,7 @@ export const courses: Course[] = [
     mode: ['offline'],
     duration: '30 Days',
     level: 'beginner',
-    image: '/courses/ccna.jpg',
+    image: '/courses/ccna.png',
     badge: 'Popular',
     curriculum: [
       'Network Fundamentals',
@@ -46,7 +46,7 @@ export const courses: Course[] = [
     mode: ['online'],
     duration: '30 Days',
     level: 'beginner',
-    image: '/courses/ccna-online.jpg',
+    image: '/courses/ccna.png',
     badge: 'Popular',
     curriculum: [
       'Network Fundamentals',
@@ -80,7 +80,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '45 Days',
     level: 'advanced',
-    image: '/courses/ccnp-security.jpg',
+    image: '/courses/ccnp-security.png',
     badge: 'Bestseller',
     curriculum: [
       'Cisco Secure Firewall',
@@ -114,7 +114,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '45 Days',
     level: 'advanced',
-    image: '/courses/ccnp-enterprise.jpg',
+    image: '/courses/ccnp-rs.png',
     curriculum: [
       'Advanced Routing (OSPF, EIGRP, BGP)',
       'Enterprise Switching',
@@ -147,7 +147,7 @@ export const courses: Course[] = [
     mode: ['online'],
     duration: '45 Days',
     level: 'advanced',
-    image: '/courses/ccnp-online.jpg',
+    image: '/courses/ccnp-rs.png',
     curriculum: [
       'Advanced Routing Protocols',
       'Enterprise Switching',
@@ -178,7 +178,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '3-4 Months',
     level: 'intermediate',
-    image: '/courses/cyber-security.jpg',
+    image: '/courses/cyber-security.png',
     badge: 'Bestseller',
     curriculum: [
       'Course 1 – Networking Fundamentals',
@@ -215,7 +215,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '30 Days',
     level: 'intermediate',
-    image: '/courses/palo-alto.jpg',
+    image: '/courses/palo-alto.png',
     curriculum: [
       'Palo Alto Firewall Architecture',
       'Initial Configuration',
@@ -249,7 +249,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '30 Days',
     level: 'intermediate',
-    image: '/courses/fortinet.jpg',
+    image: '/courses/fortinet.png',
     curriculum: [
       'FortiGate Architecture',
       'Initial Setup and Configuration',
@@ -283,7 +283,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '30 Days',
     level: 'intermediate',
-    image: '/courses/azure.jpg',
+    image: '/courses/azure-az104.png',
     curriculum: [
       'Azure Fundamentals',
       'Azure Virtual Machines',
@@ -317,7 +317,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '3-4 months',
     level: 'intermediate',
-    image: '/courses/devops.jpg',
+    image: '/courses/mcse.png',
     badge: 'New',
     curriculum: [
       'DevOps Fundamentals',
@@ -352,7 +352,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '60 Days',
     level: 'intermediate',
-    image: '/courses/ai-sde.jpg',
+    image: '',
     badge: 'New',
     curriculum: [
       'Python for AI Development',
@@ -387,7 +387,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '45 Days',
     level: 'intermediate',
-    image: '/courses/data-analyst.jpg',
+    image: '',
     badge: 'Trending',
     curriculum: [
       'Python Programming Fundamentals',
@@ -423,7 +423,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '30 Days',
     level: 'intermediate',
-    image: '/images/courses/azure.jpg',
+    image: '/courses/azure-az104.png',
     curriculum: [
       'Azure Administration',
       'Virtual Networking',
@@ -446,7 +446,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '30 Days',
     level: 'intermediate',
-    image: '/images/courses/m365.jpg',
+    image: '/courses/mcse.png',
     curriculum: [
       'M365 Tenant Management',
       'Identity Synchronization',

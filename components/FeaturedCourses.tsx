@@ -2,12 +2,26 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaArrowRight, FaClock, FaLaptop, FaChalkboardTeacher } from 'react-icons/fa';
 import { courses } from '@/lib/data/courses';
 
-// Select courses that match the navigation: CCNA, CCNP Security, Microsoft, AI
-const navCourses = courses.filter(course => 
-  ['ccna-routing-switching', 'ccna-routing-switching-online', 'ccnp-security', 'microsoft-azure', 'ai-sde', 'data-analyst-python-powerbi'].includes(course.slug)
+// Select courses that match the navigation dropdowns (show all relevant course cards)
+const navCourses = courses.filter(course =>
+  [
+    'ccna-routing-switching',
+    'ccna-routing-switching-online',
+    'ccnp-security',
+    'ccnp-enterprise',
+    'ccnp-routing-switching-online',
+    'cyber-security',
+    'fortinet-firewall',
+    'palo-alto',
+    'microsoft-azure',
+    'microsoft-365',
+    'ai-sde',
+    'data-analyst-python-powerbi'
+  ].includes(course.slug)
 );
 
 export default function FeaturedCourses() {
@@ -41,11 +55,17 @@ export default function FeaturedCourses() {
               className="group"
             >
               <div className="relative bg-card border border-border rounded-2xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 h-full flex flex-col">
-                {/* Course Image Placeholder */}
-                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <div className="text-5xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors">
-                    {course.title.split(' ')[0]}
-                  </div>
+                {/* Course Image */}
+                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
+                  {/* Use course.image if available */}
+                  {course.image ? (
+                    <Image src={course.image} alt={course.title} fill className="object-cover" />
+                  ) : (
+                    <div className="text-5xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors">
+                      {course.title.split(' ')[0]}
+                    </div>
+                  )}
+
                   {course.badge && (
                     <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold ${
                       course.badge === 'New' ? 'bg-green-500 text-white' :

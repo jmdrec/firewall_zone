@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { companyLogos } from '@/lib/data/institute';
 import { FaBuilding } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function CompanyLogos() {
   return (
@@ -24,28 +25,24 @@ export default function CompanyLogos() {
           </p>
         </motion.div>
 
-        {/* 16 Client Cards - 4 per row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {companyLogos.map((company, index) => (
-            <motion.div
-              key={company.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
-              className="group"
-            >
-              <div className="relative bg-background border border-border rounded-xl p-6 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 flex flex-col items-center justify-center h-32">
-                {/* Placeholder for company logo - User will add images later */}
-                <div className="text-center">
-                  <FaBuilding className="text-3xl text-gray-500 group-hover:text-primary transition-colors mx-auto mb-2" />
-                  <div className="text-sm font-semibold text-gray-500 group-hover:text-primary transition-colors">
-                    {company.name}
+        {/* Scrolling marquee of client logos (plain images, no boxes) */}
+        <div className="marquee-wrap overflow-hidden">
+          <div className="flex gap-4 items-center animate-marquee py-4">
+            {/* Duplicate the logos array to make a seamless loop */}
+            {[...companyLogos, ...companyLogos].map((company, i) => (
+              <div key={`${company.id}-${i}`} className="w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center">
+                {company.logo ? (
+                  <div className="relative w-full h-28 md:h-32 lg:h-36 flex items-center justify-center">
+                    <Image src={company.logo} alt={company.name} fill className="object-contain" />
                   </div>
-                </div>
+                ) : (
+                  <div className="flex items-center justify-center h-28 md:h-32 lg:h-36">
+                    <FaBuilding className="text-3xl text-gray-500" />
+                  </div>
+                )}
               </div>
-            </motion.div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Stats Bar */}

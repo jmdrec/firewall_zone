@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaClock, FaGraduationCap, FaCheckCircle, FaArrowRight, FaPhone, FaWhatsapp, FaDesktop, FaHome, FaImage } from 'react-icons/fa';
 import { Course, InstituteInfo } from '@/lib/types';
 import CourseCard from '@/components/CourseCard';
@@ -150,12 +151,18 @@ export default function CourseDetailClient({ course, relatedCourses, instituteIn
               className="hidden lg:block"
             >
               <div className="bg-card border border-border rounded-2xl overflow-hidden">
-                {/* Image Placeholder */}
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <FaImage className="text-6xl text-gray-500 mx-auto mb-4" />
-                    <div className="text-gray-400">Course Image</div>
-                  </div>
+                {/* Course Image */}
+                <div className="aspect-video relative overflow-hidden">
+                  {course.image ? (
+                    <Image src={course.image} alt={course.title} fill className="object-cover" />
+                  ) : (
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                      <div className="text-center">
+                        <FaImage className="text-6xl text-gray-500 mx-auto mb-4" />
+                        <div className="text-gray-400">Course Image</div>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 
                 {/* Price Card */}
