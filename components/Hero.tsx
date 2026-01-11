@@ -12,7 +12,7 @@ const slides = [
     title: 'Hands-on Training Labs',
     description: 'Master networking with real Cisco routers, switches, and firewalls in our state-of-the-art labs.',
     bgGradient: 'from-blue-900 to-slate-900',
-    bgImage: '/gallery/firewall-networking-1.jpeg',
+    bgImage: '/gallery/60756768255.png',
     icon: FaServer,
     highlight: '100+ Devices'
   },
@@ -21,7 +21,7 @@ const slides = [
     title: 'Expert Faculty',
     description: 'Learn from Cisco Certified Internetwork Experts (CCIE) with 25+ years of industry experience.',
     bgGradient: 'from-slate-900 to-zinc-900',
-    bgImage: '/gallery/class-1.jpeg',
+    bgImage: '/gallery/networking-software-1.png',
     icon: FaGraduationCap,
     highlight: 'CCIE Trainers'
   },
@@ -30,7 +30,7 @@ const slides = [
     title: 'Career Transformation',
     description: 'Join 5000+ success stories. We provide 100% placement assistance and interview preparation.',
     bgGradient: 'from-zinc-900 to-neutral-900',
-    bgImage: '/gallery/students-1.jpeg',
+    bgImage: '/gallery/Firewall-Institute-OF-IT-Students-1.png',
     icon: FaBriefcase,
     highlight: '95% Placement'
   },
@@ -39,7 +39,7 @@ const slides = [
     title: 'Global Certifications',
     description: 'Get certified in CCNA, CCNP, Palo Alto, Fortinet, and Azure to boost your career globally.',
     bgGradient: 'from-neutral-900 to-stone-900',
-    bgImage: '/gallery/empowering-1.png',
+    bgImage: '/gallery/Empowering-Future-Network-Professionals-1.png',
     icon: FaCertificate,
     highlight: 'Cisco Official'
   },
@@ -48,7 +48,7 @@ const slides = [
     title: 'Flexible Learning',
     description: 'Choose between comprehensive classroom training or interactive online sessions that fit your schedule.',
     bgGradient: 'from-stone-900 to-gray-900',
-    bgImage: '/gallery/best-networking-1.png',
+    bgImage: '/gallery/Firewall-Zone-Institute-of-IT-Networking-Courses-Hyderabad.png',
     icon: FaNetworkWired,
     highlight: 'Hybrid Learning'
   },
@@ -95,13 +95,13 @@ export default function Hero() {
                 className="object-cover"
                 priority
               />
-              {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black/20" />
+              {/* Dark Overlay - Reduced to let image dominate */}
+              <div className="absolute inset-0 bg-black/10" />
             </div>
 
-            {/* Background Gradient & Pattern (reduced to let image dominate) */}
-            <div className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].bgGradient} opacity-20`}>
-              <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-10" />
+            {/* Background Gradient & Pattern (minimal to let image dominate) */}
+            <div className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].bgGradient} opacity-10`}>
+              <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-5" />
             </div>
             
             {/* Content Container */}
@@ -116,10 +116,10 @@ export default function Hero() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.8 }}
                     >
-                      <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug mb-4">
+                      <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug mb-4 drop-shadow-lg">
                         {slides[currentSlide].title}
                       </h2>
-                      <p className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed">
+                      <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed drop-shadow-md">
                         {slides[currentSlide].description}
                       </p>
                     </motion.div>

@@ -269,6 +269,11 @@ export default function Navigation() {
                 </AnimatePresence>
               </div>
 
+              {/* Blog */}
+              <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">
+                Blog
+              </Link>
+
               {/* Contact Us */}
               <Link href="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact Us
@@ -368,6 +373,9 @@ export default function Navigation() {
                     </Link>
                   ))}
                 </div>
+                <Link href="/blog" className="block py-2 text-foreground hover:text-primary" onClick={() => setIsOpen(false)}>
+                  Blog
+                </Link>
                 <Link href="/contact" className="block py-2 text-foreground hover:text-primary" onClick={() => setIsOpen(false)}>
                   Contact Us
                 </Link>
