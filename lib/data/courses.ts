@@ -20,12 +20,12 @@ export const courses: Course[] = [
       'IP Services',
       'Security Fundamentals',
       'Automation and Programmability',
-      'Routing Protocols (OSPF, EIGRP)',
+      'Routing Protocols (Static Routing, RIP, OSPF, EIGRP and BGP)',
       'Switching Technologies (VLANs, STP)',
       'Network Security Basics',
       'Hands-on Lab Sessions'
     ],
-    prerequisites: ['Basic computer knowledge', 'Interest in networking'],
+    prerequisites: ['No Prerequisites'],
     certification: 'CCNA (Cisco Certified Network Associate)',
     highlights: [
       '100% Hands-on Training',
@@ -38,10 +38,7 @@ export const courses: Course[] = [
       'Network Administrator',
       'Network Engineer',
       'Network Support Engineer',
-      'Systems Administrator',
       'IT Support Specialist',
-      'Network Technician',
-      'Help Desk Technician',
       'Junior Network Engineer'
     ],
     trainingMethodology: [
@@ -86,7 +83,7 @@ export const courses: Course[] = [
       'Live Interactive Sessions',
       'Recorded Sessions for Review'
     ],
-    prerequisites: ['Basic computer knowledge', 'Stable internet connection'],
+    prerequisites: ['No Prerequisites'],
     certification: 'CCNA (Cisco Certified Network Associate)',
     highlights: [
       'Learn from Home',
@@ -99,16 +96,13 @@ export const courses: Course[] = [
       'Network Administrator',
       'Network Engineer',
       'Network Support Engineer',
-      'Systems Administrator',
       'IT Support Specialist',
-      'Network Technician',
-      'Help Desk Technician',
       'Junior Network Engineer'
     ],
     trainingMethodology: [
       'Comprehensive online training for overseas students',
       'Live interactive sessions with virtual labs',
-      'Remote access to real Cisco equipment',
+      'Live classes recordings available',
       'Recorded sessions for review and practice',
       'Flexible scheduling for working professionals',
       'One-on-one doubt clearing sessions'
@@ -120,7 +114,7 @@ export const courses: Course[] = [
       'Virtual Hands-On Labs – Remote access to live network scenarios',
       'Career-Focused Curriculum – Build job-ready skills from day one',
       'Learn from anywhere with stable internet connection',
-      'Recorded sessions available for revision'
+      'Live classes recordings available for revision'
     ],
     relatedCourses: ['1', '3', '4']
   },
@@ -131,7 +125,7 @@ export const courses: Course[] = [
     shortDescription: 'Advanced Cisco security training covering firewalls, VPNs, IPS, and security best practices.',
     description: 'Professional-level security training focused on Cisco security solutions. Master firewalls, VPNs, intrusion prevention, and advanced security technologies. Ideal for network engineers looking to specialize in security.',
     category: ['CISCO', 'Security', 'Advanced'],
-    mode: ['offline', 'online'],
+    mode: ['offline'],
     duration: '45 Days',
     level: 'advanced',
     image: '/courses/ccnp-security.png',
@@ -147,7 +141,7 @@ export const courses: Course[] = [
       'Troubleshooting Security Solutions',
       'Real-world Security Scenarios'
     ],
-    prerequisites: ['CCNA certification or equivalent knowledge', '1-2 years networking experience'],
+    prerequisites: ['CCNA knowledge'],
     certification: 'CCNP Security',
     highlights: [
       'Advanced Security Training',
@@ -188,11 +182,11 @@ export const courses: Course[] = [
   {
     id: '4',
     slug: 'ccnp-enterprise',
-    title: 'CCNP Enterprise',
+    title: 'CCNP Enterprise (R&S)',
     shortDescription: 'Master enterprise networking with advanced routing, switching, and network design.',
     description: 'Advanced enterprise networking course covering complex routing and switching scenarios, network design, and enterprise solutions. Perfect for those aiming to become senior network engineers.',
     category: ['CISCO', 'Networking', 'Enterprise'],
-    mode: ['offline', 'online'],
+    mode: ['offline'],
     duration: '45 Days',
     level: 'advanced',
     image: '/courses/ccnp-rs.png',
@@ -207,7 +201,7 @@ export const courses: Course[] = [
       'Multicast Routing',
       'Troubleshooting Complex Networks'
     ],
-    prerequisites: ['CCNA certification', 'Networking experience recommended'],
+    prerequisites: ['CCNA knowledge'],
     certification: 'CCNP Enterprise',
     highlights: [
       'Enterprise-Level Skills',
@@ -221,7 +215,7 @@ export const courses: Course[] = [
   {
     id: '5',
     slug: 'ccnp-routing-switching-online',
-    title: 'CCNP R&S Online',
+    title: 'CCNP Enterprise (R&S) online',
     shortDescription: 'Complete CCNP Routing & Switching training delivered online with virtual labs.',
     description: 'Comprehensive online CCNP training with virtual lab access and live instruction. Learn advanced routing and switching concepts from the comfort of your home.',
     category: ['CISCO', 'Networking', 'Online'],
@@ -238,7 +232,7 @@ export const courses: Course[] = [
       'Live Online Classes',
       'Practice Labs'
     ],
-    prerequisites: ['CCNA certification', 'Good internet connection'],
+    prerequisites: ['CCNA knowledge'],
     certification: 'CCNP Enterprise',
     highlights: [
       'Flexible Online Learning',
@@ -257,8 +251,8 @@ export const courses: Course[] = [
     description: 'Advance your career in cybersecurity with our expert-led training. This comprehensive 10-course package covers ethical hacking, network defense, and real-world threat mitigation—designed to get you certified and job-ready in today\'s digital landscape.',
     category: ['Security', 'Cyber Security', 'Ethical Hacking'],
     mode: ['offline', 'online'],
-    duration: '3-4 Months',
-    level: 'intermediate',
+    duration: '60 Days',
+    level: 'advanced',
     image: '/courses/cyber-security.png',
     badge: 'Bestseller',
     curriculum: [
@@ -273,7 +267,7 @@ export const courses: Course[] = [
       'Course 9 – Network Monitoring & SIEM',
       'Course 10 – FortiGate Security'
     ],
-    prerequisites: ['Basic networking knowledge', 'Computer fundamentals'],
+    prerequisites: ['CCNA knowledge'],
     certification: 'Multiple certifications covered',
     highlights: [
       '10 Complete Courses',
@@ -339,7 +333,7 @@ export const courses: Course[] = [
       'Panorama Management',
       'Troubleshooting and Monitoring'
     ],
-    prerequisites: ['Networking basics', 'Firewall concepts'],
+    prerequisites: ['CCNA knowledge'],
     certification: 'PCNSA, PCNSE (preparation)',
     highlights: [
       'Next-Gen Firewall Training',
@@ -370,10 +364,8 @@ export const courses: Course[] = [
     whyChoose: [
       'High Demand – Palo Alto-certified professionals are in global demand',
       'Recognized Certifications – PCNSA and PCNSE validate your expertise',
-      'Hands-On Labs – Train with real Palo Alto firewall equipment',
       'Career-Focused Curriculum – Build job-ready skills from day one',
-      'Industry-leading next-generation firewall technology',
-      'Expert instruction from certified professionals'
+      'Industry-leading next-generation firewall technology'
     ],
     relatedCourses: ['6', '8', '3']
   },
@@ -384,9 +376,9 @@ export const courses: Course[] = [
     shortDescription: 'Learn Fortinet FortiGate firewall configuration, security policies, and network protection.',
     description: 'Comprehensive Fortinet FortiGate training covering firewall setup, security policies, VPN, and advanced threat protection. Hands-on labs with real FortiGate devices.',
     category: ['Security', 'Firewall', 'Fortinet'],
-    mode: ['offline', 'online'],
-    duration: '30 Days',
-    level: 'intermediate',
+    mode: ['offline'],
+    duration: '2 weeks',
+    level: 'advanced',
     image: '/courses/fortinet.png',
     curriculum: [
       'FortiGate Architecture',
@@ -400,8 +392,8 @@ export const courses: Course[] = [
       'Security Profiles',
       'Troubleshooting'
     ],
-    prerequisites: ['Basic networking knowledge'],
-    certification: 'NSE4, NSE7 (preparation)',
+    prerequisites: ['CCNA knowledge'],
+    certification: 'NSE4, NSE5 (preparation)',
     highlights: [
       'FortiGate Training',
       'Hands-on Labs',
@@ -414,10 +406,8 @@ export const courses: Course[] = [
       'Network Security Engineer',
       'Firewall Administrator',
       'Security Engineer',
-      'Network Administrator',
       'Infrastructure Security Specialist',
-      'SOC Analyst',
-      'Systems Security Engineer'
+      'SOC Analyst'
     ],
     trainingMethodology: [
       'Hands-on training with real FortiGate firewalls',
@@ -430,7 +420,7 @@ export const courses: Course[] = [
     note: 'Fortinet Firewall Training in Hyderabad at Firewall Zone Institute of IT is led by certified experts and designed to help you master FortiGate deployment, configuration, and security policies. Learn through hands-on labs, real-world simulations, and certification-focused modules to build advanced firewall skills and become job-ready. Fortinet\'s globally recognized NSE (Network Security Expert) certification pathway opens doors to top-tier roles.',
     whyChoose: [
       'High Demand – Fortinet-certified professionals are in global demand',
-      'Recognized Certifications – NSE 4, NSE 5, and NSE 7 validate your expertise',
+      'Recognized Certifications – NSE 4 and NSE 5 validate your expertise',
       'Hands-On Labs – Train with real FortiGate equipment',
       'Career-Focused Curriculum – Build job-ready skills from day one',
       'Industry-leading security solutions',
@@ -445,7 +435,7 @@ export const courses: Course[] = [
     shortDescription: 'Master cloud computing with Microsoft Azure training covering infrastructure, security, and services.',
     description: 'Complete Microsoft Azure training covering cloud infrastructure, virtual machines, networking, security, and Azure services. Perfect for IT professionals moving to the cloud.',
     category: ['Cloud', 'Microsoft', 'Azure'],
-    mode: ['offline', 'online'],
+    mode: ['offline'],
     duration: '30 Days',
     level: 'intermediate',
     image: '/courses/azure-az104.png',
@@ -461,7 +451,7 @@ export const courses: Course[] = [
       'Cost Management',
       'Hands-on Projects'
     ],
-    prerequisites: ['Basic IT knowledge', 'Networking basics'],
+    prerequisites: ['Basic computer knowledge'],
     certification: 'AZ-104, AZ-305 (preparation)',
     highlights: [
       'Cloud Computing Skills',
@@ -538,34 +528,63 @@ export const courses: Course[] = [
     id: '11',
     slug: 'ai-sde',
     title: 'AI SDE (Software Development Engineer)',
-    shortDescription: 'Master AI-powered software development with machine learning, deep learning, and AI integration.',
-    description: 'Comprehensive AI Software Development Engineer course covering machine learning, deep learning, natural language processing, and AI integration in software applications. Learn to build intelligent applications with Python, TensorFlow, and PyTorch.',
-    category: ['AI', 'Machine Learning', 'Software Development'],
+    shortDescription: 'Industry-ready AI Software Development training with hands-on projects and structured learning.',
+    description: 'Our AI-SDE (AI Software Development Engineer) training program is designed to make you industry-ready with hands-on projects, real-world problem-solving, and structured learning. This 3-month program covers software fundamentals, frontend & backend development, JavaScript, AI tools, SQL, Data Structures, and project deployment.',
+    category: ['AI', 'Software Development', 'Full Stack'],
     mode: ['offline', 'online'],
-    duration: '60 Days',
-    level: 'intermediate',
+    duration: '90 Days',
+    level: 'advanced',
     image: '',
     badge: 'New',
     curriculum: [
-      'Python for AI Development',
-      'Machine Learning Fundamentals',
-      'Deep Learning with TensorFlow & PyTorch',
-      'Natural Language Processing (NLP)',
-      'Computer Vision Basics',
-      'AI Model Deployment',
-      'MLOps and CI/CD for AI',
-      'Building AI-Powered Applications',
-      'LLM Integration (ChatGPT, LangChain)',
-      'Capstone AI Project'
+      'Software Development Fundamentals',
+      'Frontend Development (HTML, CSS, JavaScript)',
+      'Backend Development (Node.js, Express)',
+      'Python Programming',
+      'AI Tools Integration',
+      'SQL & Database Management',
+      'Data Structures & Algorithms',
+      'API Development & Integration',
+      'Project Deployment',
+      'Real-World Projects'
     ],
-    prerequisites: ['Basic Python knowledge', 'Programming fundamentals'],
+    prerequisites: ['Basic computer knowledge'],
     certification: 'AI Software Development Engineer Certificate',
     highlights: [
-      'Cutting-Edge AI Skills',
-      'Hands-on ML Projects',
+      'Full Stack Development Skills',
+      'Hands-on Projects',
       'Industry-Ready Training',
-      'LLM & ChatGPT Integration',
-      'High-Demand Career Path'
+      'AI Tools Integration',
+      '3-Month Intensive Program',
+      'Frontend & Backend Development'
+    ],
+    careerOpportunities: [
+      'AI Software Development Engineer',
+      'Full Stack Developer',
+      'Python Developer',
+      'Web Application Engineer',
+      'Automation Developer',
+      'Junior Machine Learning Engineer',
+      'Backend Developer',
+      'Frontend Developer'
+    ],
+    trainingMethodology: [
+      'Hands-on training with real-world projects',
+      'Live classroom training with industry experts',
+      'Frontend & backend development scenarios',
+      'AI tools integration and deployment',
+      'Database design and SQL practices',
+      'Project-based learning approach',
+      'Individual attention and personalized guidance'
+    ],
+    note: 'AI-SDE Training in Hyderabad at Firewall Zone Institute of Technology is led by certified experts and designed to help you master AI-driven software development, automation, and full-stack engineering. Learn through hands-on labs, real-world simulations, and project-focused modules to build advanced development skills and become job-ready.',
+    whyChoose: [
+      'High Demand – AI Software Development Engineers are in global demand',
+      'Industry-Ready Skills – Build job-ready development skills from day one',
+      'Hands-On Projects – Train with real-world AI tools and frameworks',
+      'Career-Focused Curriculum – Structured learning with project deployment',
+      'Comprehensive training covering full-stack development',
+      'Expert instruction from certified professionals with industry experience'
     ],
     relatedCourses: ['12', '10', '9']
   },
@@ -577,8 +596,8 @@ export const courses: Course[] = [
     description: 'Complete data analytics training covering Python for data analysis, SQL, data visualization with Power BI, and statistical analysis. Learn to extract insights from data and create compelling dashboards.',
     category: ['Data Analytics', 'Python', 'Power BI'],
     mode: ['offline', 'online'],
-    duration: '45 Days',
-    level: 'intermediate',
+    duration: '60 Days',
+    level: 'advanced',
     image: '',
     badge: 'Trending',
     curriculum: [
@@ -602,31 +621,35 @@ export const courses: Course[] = [
       'Industry Tools Training',
       'High-Paying Career'
     ],
-    relatedCourses: ['11', '9', '10']
-  },
-
-  {
-    id: '18',
-    slug: 'microsoft-azure',
-    title: 'Microsoft Azure',
-    shortDescription: 'Cloud computing training for Microsoft Azure certification.',
-    description: 'Learn cloud computing concepts and master Microsoft Azure services. This course covers Azure administration, networking, security, and computing solutions.',
-    category: ['Cloud', 'Microsoft'],
-    mode: ['offline', 'online'],
-    duration: '30 Days',
-    level: 'intermediate',
-    image: '/courses/azure-az104.png',
-    curriculum: [
-      'Azure Administration',
-      'Virtual Networking',
-      'Azure Identity & Governance',
-      'Storage Solutions',
-      'Deploying Virtual Machines'
+    careerOpportunities: [
+      'Data Analyst',
+      'Business Intelligence Analyst',
+      'Data Visualization Specialist',
+      'Power BI Developer',
+      'Python Data Analyst',
+      'Analytics Consultant',
+      'Reporting Analyst',
+      'Junior Data Scientist'
     ],
-    prerequisites: ['Basic OS and Networking knowledge'],
-    certification: 'AZ-104',
-    highlights: ['Live Cloud Labs', 'Exam Preparation'],
-    relatedCourses: ['19']
+    trainingMethodology: [
+      'Hands-on training with real datasets',
+      'Live classroom training with industry experts',
+      'Python programming for data analysis',
+      'Power BI dashboard creation projects',
+      'SQL database querying and analysis',
+      'Statistical analysis and visualization',
+      'Individual attention and personalized guidance'
+    ],
+    note: 'Data Analyst Training in Hyderabad at Firewall Zone Institute of Technology is led by certified experts and designed to help you master data analysis, visualization, and business intelligence. Learn through hands-on labs, real-world datasets, and tool-specific modules to build advanced analytics skills and become job-ready.',
+    whyChoose: [
+      'High Demand – Data Analysts are in global demand across industries',
+      'Industry-Ready Skills – Build job-ready analytics skills from day one',
+      'Hands-On Projects – Train with real-world datasets and business scenarios',
+      'Career-Focused Curriculum – Python, Power BI, and SQL expertise',
+      'Comprehensive training covering data analytics lifecycle',
+      'Expert instruction from certified professionals with industry experience'
+    ],
+    relatedCourses: ['11', '9', '10']
   },
   {
     id: '19',
@@ -648,7 +671,7 @@ export const courses: Course[] = [
     prerequisites: ['Basic Windows Server knowledge'],
     certification: 'MS-100 / MS-101',
     highlights: ['Real-world Scenarios', 'Tenant Access'],
-    relatedCourses: ['18']
+    relatedCourses: ['9']
   }
 ];
 

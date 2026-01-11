@@ -59,7 +59,7 @@ export default function FeaturedCourses() {
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
                   {/* Use course.image if available */}
                   {course.image ? (
-                    <Image src={course.image} alt={course.title} fill className="object-cover" />
+                    <Image src={course.image} alt={course.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                   ) : (
                     <div className="text-5xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors">
                       {course.title.split(' ')[0]}

@@ -72,22 +72,20 @@ export default function AboutPage() {
   ];
 
   const milestones = [
-    { year: '2000', title: 'Institute Founded', description: 'Started with a vision to provide quality networking education' },
-    { year: '2005', title: 'CISCO Partnership', description: 'Became authorized CISCO training partner' },
-    { year: '2010', title: '1000+ Students', description: 'Reached milestone of training 1000+ professionals' },
-    { year: '2015', title: 'Expanded Courses', description: 'Added cyber security and cloud computing programs' },
+    { year: '2011', title: 'Institute Founded', description: 'Started with a vision to provide quality networking education' },
+    { year: '2016', title: '1000+ Students', description: 'Reached milestone of training 1000+ professionals' },
+    { year: '2018', title: 'Expanded Courses', description: 'Added cyber security and cloud computing programs' },
     { year: '2020', title: 'Online Training', description: 'Launched online training platform during pandemic' },
-    { year: '2025', title: '5000+ Alumni', description: 'Proud alumni network of 5000+ working professionals' }
+    { year: '2024', title: '5000+ Students', description: 'Proud alumni network of 5000+ working professionals' },
+    { year: '2025', title: 'Launched AI Courses', description: 'Introduced AI SDE and Data Analyst training programs' }
   ];
 
   const whyChooseUs = [
     'Hands-on Training with Real Equipment',
     'Flexible Batch Timings (Weekday & Weekend)',
-    'Job Placement Assistance & Interview Preparation',
     'Industry-Recognized Certifications',
     'Small Batch Sizes for Personalized Attention',
     'Lifetime Course Access & Support',
-    'Free Demo Classes Available',
     'Modern Infrastructure & Facilities'
   ];
 
@@ -110,8 +108,10 @@ export default function AboutPage() {
                 src={slides[currentSlide].bgImage} 
                 alt={slides[currentSlide].title}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority
+                loading="eager"
               />
               {/* Dark Overlay */}
               <div className="absolute inset-0 bg-black/20" />

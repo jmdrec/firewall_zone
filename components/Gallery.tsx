@@ -50,7 +50,7 @@ export default function Gallery() {
             >
               <div className="relative bg-background border border-border rounded-xl overflow-hidden aspect-square hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 {/* Gallery image */}
-                <Image src={image.src} alt={image.title} fill className="object-cover" />
+                <Image src={image.src} alt={image.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
 
                 {/* Caption (visible on hover) */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/25">

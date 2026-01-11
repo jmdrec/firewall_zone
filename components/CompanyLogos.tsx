@@ -33,7 +33,7 @@ export default function CompanyLogos() {
               <div key={`${company.id}-${i}`} className="w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center">
                 {company.logo ? (
                   <div className="relative w-full h-28 md:h-32 lg:h-36 flex items-center justify-center">
-                    <Image src={company.logo} alt={company.name} fill className="object-contain" />
+                    <Image src={company.logo} alt={company.name} fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 150px" className="object-contain" />
                   </div>
                 ) : (
                   <div className="flex items-center justify-center h-28 md:h-32 lg:h-36">
@@ -58,8 +58,8 @@ export default function CompanyLogos() {
               <div className="text-white/80">Placement Rate</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-white/80">Hiring Partners</div>
+              <div className="text-4xl font-bold mb-2">Many</div>
+              <div className="text-white/80">Career Opportunities</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">5000+</div>

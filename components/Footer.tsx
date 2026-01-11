@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebook, FaYoutube, FaPinterest, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
@@ -11,7 +9,7 @@ export default function Footer() {
   const ciscoLinks = [
     { name: 'CCNA R&S + Security', href: '/courses/ccna-routing-switching' },
     { name: 'CCNP Security', href: '/courses/ccnp-security' },
-    { name: 'CCNP Enterprise', href: '/courses/ccnp-enterprise' }
+    { name: 'CCNP Enterprise (R&S)', href: '/courses/ccnp-enterprise' }
   ];
 
   const securityLinks = [

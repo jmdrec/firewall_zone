@@ -27,12 +27,13 @@ export default function Navigation() {
 
   const ccnpDropdown = [
     { name: 'CCNP Security', href: '/courses/ccnp-security' },
-    { name: 'CCNP Enterprise', href: '/courses/ccnp-enterprise' },
-    { name: 'CCNP R&S', href: '/courses/ccnp-routing-switching-online' },
+    { name: 'CCNP Enterprise (R&S)', href: '/courses/ccnp-enterprise' },
+    { name: 'CCNP Enterprise (R&S) online', href: '/courses/ccnp-routing-switching-online' }
   ];
 
   const securityDropdown = [
     { name: 'Cyber Security', href: '/courses/cyber-security' },
+    { name: 'CCNP Security', href: '/courses/ccnp-security' },
     { name: 'Fortinet Firewall', href: '/courses/fortinet-firewall' },
     { name: 'Palo Alto', href: '/courses/palo-alto' },
   ];

@@ -26,14 +26,15 @@ export default function CourseDetailClient({ course, relatedCourses, instituteIn
     const details: Record<string, { classroom?: string; online?: string; duration: string; durationDays: string }> = {
       'ccna-routing-switching': { classroom: '₹8,000', duration: '30 Days', durationDays: '30 Days' },
       'ccna-routing-switching-online': { online: '₹10,000', duration: '30 Days', durationDays: '30 Days' },
-      'ccnp-security': { classroom: '₹25,000', online: '₹30,000', duration: '45 Days', durationDays: '45 Days' },
-      'ccnp-enterprise': { classroom: '₹25,000', online: '₹30,000', duration: '45 Days', durationDays: '45 Days' },
-      'cyber-security': { classroom: '₹50,000', online: '₹55,000', duration: '3-4 Months', durationDays: '90-120 Days' },
-      'microsoft-azure': { classroom: '₹15,000', online: '₹18,000', duration: '30 Days', durationDays: '30 Days' },
-      'ai-sde': { classroom: '₹35,000', online: '₹40,000', duration: '60 Days', durationDays: '60 Days' },
-      'data-analyst-python-powerbi': { classroom: '₹25,000', online: '₹30,000', duration: '45 Days', durationDays: '45 Days' },
-      'palo-alto': { classroom: '₹20,000', online: '₹25,000', duration: '30 Days', durationDays: '30 Days' },
-      'fortinet-firewall': { classroom: '₹20,000', online: '₹25,000', duration: '30 Days', durationDays: '30 Days' },
+      'ccnp-security': { classroom: '₹20,000', duration: '45 Days', durationDays: '45 Days' },
+      'ccnp-enterprise': { classroom: '₹15,000', duration: '45 Days', durationDays: '45 Days' },
+      'ccnp-routing-switching-online': { online: '₹20,000', duration: '45 Days', durationDays: '45 Days' },
+      'cyber-security': { classroom: '₹25,000', online: '₹20,000', duration: '60 Days', durationDays: '60 Days' },
+      'microsoft-azure': { classroom: '₹10,000', duration: '30 Days', durationDays: '30 Days' },
+      'ai-sde': { classroom: '₹25,000', online: '₹30,000', duration: '90 Days', durationDays: '90 Days' },
+      'data-analyst-python-powerbi': { classroom: '₹15,000', online: '₹20,000', duration: '60 Days', durationDays: '60 Days' },
+      'palo-alto': { classroom: '₹15,000', online: '₹15,000', duration: '30 Days', durationDays: '30 Days' },
+      'fortinet-firewall': { classroom: '₹20,000', duration: '2 Weeks', durationDays: '2 Weeks' },
     };
     return details[slug];
   };
@@ -154,7 +155,7 @@ export default function CourseDetailClient({ course, relatedCourses, instituteIn
                 {/* Course Image */}
                 <div className="aspect-video relative overflow-hidden">
                   {course.image ? (
-                    <Image src={course.image} alt={course.title} fill className="object-cover" />
+                    <Image src={course.image} alt={course.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                   ) : (
                     <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                       <div className="text-center">

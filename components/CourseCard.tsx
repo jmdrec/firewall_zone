@@ -41,7 +41,7 @@ export default function CourseCard({ course, index = 0 }: CourseCardProps) {
             {/* Render course image if present, otherwise keep previous placeholder */}
             {course.image ? (
               <>
-                <Image src={course.image} alt={course.title} fill className="object-cover" />
+                <Image src={course.image} alt={course.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                 <div className="absolute inset-0 opacity-10">
                   <div className="absolute inset-0" style={{
                     backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)',

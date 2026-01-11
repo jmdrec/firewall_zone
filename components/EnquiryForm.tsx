@@ -8,7 +8,7 @@ const courses = [
   'CCNA R&S + Security (Offline)',
   'CCNA R&S + Security (Online)',
   'CCNP Security',
-  'CCNP Enterprise',
+  'CCNP Enterprise (R&S)',
   'CCNP R&S',
   'Cyber Security',
   'AI SDE',

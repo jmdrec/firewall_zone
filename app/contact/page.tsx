@@ -145,7 +145,7 @@ export default function ContactPage() {
                     <option value="">Select a course</option>
                     <option value="ccna">CCNA R&S + Security</option>
                     <option value="ccnp-security">CCNP Security</option>
-                    <option value="ccnp-enterprise">CCNP Enterprise</option>
+                    <option value="ccnp-enterprise">CCNP Enterprise (R&S)</option>
                     <option value="cyber-security">Cyber Security</option>
                     <option value="palo-alto">Palo Alto</option>
                     <option value="fortinet">Fortinet Firewall</option>
