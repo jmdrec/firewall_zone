@@ -44,7 +44,7 @@ export default function Navigation() {
   ];
 
   const aiCoursesDropdown = [
-    { name: 'AI SDE (Software Development Engineer)', href: '/courses/ai-sde' },
+    { name: 'FULL STACK Development (MERN) Using AI', href: '/courses/ai-sde' },
     { name: 'Data Analyst with Python & Power BI', href: '/courses/data-analyst-python-powerbi' },
   ];
 

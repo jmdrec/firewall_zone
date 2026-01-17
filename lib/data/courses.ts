@@ -527,14 +527,14 @@ export const courses: Course[] = [
   {
     id: '11',
     slug: 'ai-sde',
-    title: 'AI SDE (Software Development Engineer)',
-    shortDescription: 'Industry-ready AI Software Development training with hands-on projects and structured learning.',
-    description: 'Our AI-SDE (AI Software Development Engineer) training program is designed to make you industry-ready with hands-on projects, real-world problem-solving, and structured learning. This 3-month program covers software fundamentals, frontend & backend development, JavaScript, AI tools, SQL, Data Structures, and project deployment.',
+    title: 'Full Stack Development (MERN) Using AI',
+    shortDescription: 'Industry-ready Full Stack Development training with hands-on projects and structured learning.',
+    description: 'Our Full Stack Development (MERN) training program is designed to make you industry-ready with hands-on projects, real-world problem-solving, and structured learning. This 3-month program covers software fundamentals, frontend & backend development, JavaScript, AI tools, SQL, Data Structures, and project deployment.',
     category: ['AI', 'Software Development', 'Full Stack'],
     mode: ['offline', 'online'],
     duration: '90 Days',
     level: 'advanced',
-    image: '/courses/DATA Analyst .png',
+    image: '/courses/FULL STACK Development (MERN) Using AI.png',
     badge: 'New',
     curriculum: [
       'WEEK 1: Software Engineering Fundamentals – Introduction to IT Industry, SDLC, Agile, Scrum, Git, GitHub, VS Code',
@@ -546,7 +546,7 @@ export const courses: Course[] = [
       'WEEK 12-13: AI Integration & Deployment – Python Basics for AI, AI Tools in Development, API Automation, Deployment on AWS/Render, Full-Stack + AI Project'
     ],
     prerequisites: ['Basic computer knowledge'],
-    certification: 'AI Software Development Engineer Certificate',
+    certification: 'Full Stack Software Development Engineer Certificate',
     highlights: [
       'Full Stack Development Skills',
       'Hands-on Projects',
@@ -556,12 +556,9 @@ export const courses: Course[] = [
       'Frontend & Backend Development'
     ],
     careerOpportunities: [
-      'AI Software Development Engineer',
       'Full Stack Developer',
-      'Python Developer',
       'Web Application Engineer',
       'Automation Developer',
-      'Junior Machine Learning Engineer',
       'Backend Developer',
       'Frontend Developer'
     ],
@@ -574,7 +571,7 @@ export const courses: Course[] = [
       'Project-based learning approach',
       'Individual attention and personalized guidance'
     ],
-    note: 'AI-SDE Training in Hyderabad at Firewall Zone Institute of Technology is led by certified experts and designed to help you master AI-driven software development, automation, and full-stack engineering. Learn through hands-on labs, real-world simulations, and project-focused modules to build advanced development skills and become job-ready.',
+    note: 'Full Stack Development (MERN) Using AI Training in Hyderabad at Firewall Zone Institute of Technology is led by certified experts and designed to help you master AI-driven software development, automation, and full-stack engineering. Learn through hands-on labs, real-world simulations, and project-focused modules to build advanced development skills and become job-ready.',
     whyChoose: [
       'High Demand – AI Software Development Engineers are in global demand',
       'Industry-Ready Skills – Build job-ready development skills from day one',
@@ -595,7 +592,7 @@ export const courses: Course[] = [
     mode: ['offline', 'online'],
     duration: '60 Days',
     level: 'advanced',
-    image: '/courses/AI SDE.png',
+    image: '/courses/DATA Analyst.png',
     badge: 'Trending',
     curriculum: [
       'WEEK 1: Basics of Python – Introduction to Python, Variables, Data Types, Input/Output, Conditional & Looping Statements',
