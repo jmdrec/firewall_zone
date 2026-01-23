@@ -36,42 +36,42 @@ const reviews = [
 
 export default function StudentReviews() {
   return (
-    <section className="py-20 bg-background overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Student Reviews</h2>
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Student Reviews</h2>
           <div className="flex items-center justify-center gap-2 mb-2">
-             <span className="text-2xl font-bold">4.9</span>
-             <div className="flex text-yellow-500">
+             <span className="text-xl sm:text-2xl font-bold">4.9</span>
+             <div className="flex text-yellow-500 text-sm sm:text-base">
                {[...Array(5)].map((_, i) => <FaStar key={i} />)}
              </div>
           </div>
-          <p className="text-gray-400">Based on 229+ Reviews on Google</p>
+          <p className="text-sm sm:text-base text-gray-400">Based on 229+ Reviews on Google</p>
         </div>
 
-        <div className="overflow-x-auto pb-8 hide-scrollbar">
-           <div className="flex gap-6 min-w-max px-4">
+        <div className="overflow-x-auto pb-6 sm:pb-8 -mx-4 px-4 sm:mx-0 sm:px-0">
+           <div className="flex gap-4 sm:gap-6 min-w-max">
              {/* Google Summary Card */}
              <motion.div 
                initial={{ opacity: 0, x: -20 }}
                whileInView={{ opacity: 1, x: 0 }}
                viewport={{ once: true }}
-               className="w-[300px] h-[280px] bg-white text-gray-900 rounded-xl p-6 shadow-lg flex flex-col items-center justify-center border border-gray-200"
+               className="w-[280px] sm:w-[300px] h-[260px] sm:h-[280px] bg-white text-gray-900 rounded-xl p-5 sm:p-6 shadow-lg flex flex-col items-center justify-center border border-gray-200 flex-shrink-0"
              >
-               <div className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-4">
-                 <FaGoogle className="text-3xl text-red-500" />
+               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-3 sm:mb-4">
+                 <FaGoogle className="text-2xl sm:text-3xl text-red-500" />
                </div>
-               <h3 className="text-xl font-bold mb-2">Firewall Zone</h3>
-               <div className="flex items-center gap-1 text-yellow-500 text-xl mb-2">
+               <h3 className="text-lg sm:text-xl font-bold mb-2">Firewall Zone</h3>
+               <div className="flex items-center gap-1 text-yellow-500 text-lg sm:text-xl mb-2">
                  {[...Array(5)].map((_, i) => <FaStar key={i} />)}
                </div>
-               <p className="text-gray-600 font-medium">4.9 / 5.0</p>
-               <p className="text-gray-500 text-sm mb-4">Based on 229+ reviews</p>
+               <p className="text-gray-600 font-medium text-sm sm:text-base">4.9 / 5.0</p>
+               <p className="text-gray-500 text-xs sm:text-sm mb-3 sm:mb-4">Based on 229+ reviews</p>
                <a 
                  href="https://www.google.com/search?q=firewall+zone+hyderabad+reviews" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="px-6 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700 transition-colors"
+                 className="px-5 sm:px-6 py-1.5 sm:py-2 bg-blue-600 text-white rounded-full text-xs sm:text-sm font-semibold hover:bg-blue-700 transition-colors"
                >
                  Review Us on Google
                </a>
@@ -85,7 +85,7 @@ export default function StudentReviews() {
                  whileInView={{ opacity: 1, x: 0 }}
                  viewport={{ once: true }}
                  transition={{ delay: index * 0.1 }}
-                 className="w-[350px] relative bg-card border border-border rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col"
+                 className="w-[300px] sm:w-[350px] relative bg-card border border-border rounded-xl p-5 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col flex-shrink-0"
                >
                  <div className="flex items-start justify-between mb-4">
                    <div className="flex items-center gap-3">

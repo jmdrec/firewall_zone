@@ -26,19 +26,18 @@ const navCourses = courses.filter(course =>
 
 export default function FeaturedCourses() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16 space-y-4"
-        >
-          <h2 className="text-4xl lg:text-5xl font-bold">
+          className="text-center mb-10 sm:mb-12 lg:mb-16 space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             Our <span className="bg-gradient-primary bg-clip-text text-transparent">Courses</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Master networking and cybersecurity with our industry-leading courses designed to make you job-ready
           </p>
         </motion.div>

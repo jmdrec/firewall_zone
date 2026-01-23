@@ -51,20 +51,23 @@ export default function Navigation() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-gradient-primary text-white py-2 hidden md:block">
+      <div className="bg-gradient-primary text-white py-2 hidden md:block overflow-hidden">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 flex-shrink-0">
             <a href="tel:040-23530263" className="flex items-center gap-2 hover:text-gray-200">
               <FaPhone className="text-xs" />
-              040-23530263
+              +91 888 6192132
             </a>
             <a href={`mailto:${instituteInfo.contact.email}`} className="flex items-center gap-2 hover:text-gray-200">
               <FaEnvelope className="text-xs" />
               {instituteInfo.contact.email}
             </a>
           </div>
-          <div className="text-xs">
-            {instituteInfo.contact.address}
+          {/* Scrolling Address Marquee */}
+          <div className="overflow-hidden flex-1 ml-4">
+            <div className="animate-marquee whitespace-nowrap text-xs">
+              25+years of Experience | Highly Equipped Labs with Latest Advanced Equipments | 100+Routers, Switches and Firewalls | Highly Qualified Experienced Faculty &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; {instituteInfo.contact.address}
+            </div>
           </div>
         </div>
       </div>

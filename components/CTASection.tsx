@@ -6,7 +6,7 @@ import EnquiryForm from './EnquiryForm';
 
 export default function CTASection() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-background"></div>
       <div className="absolute inset-0 opacity-5">
@@ -22,31 +22,31 @@ export default function CTASection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12 space-y-4"
+          className="text-center mb-8 sm:mb-10 lg:mb-12 space-y-3 sm:space-y-4"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
             Ready to Start Your{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">IT Career</span>?
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto">
             Join 5000+ students who have transformed their careers with expert-led training and hands-on experience
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start max-w-6xl mx-auto">
           {/* Left - Contact Info Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 md:p-12 text-white space-y-8">
+            <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-6 sm:p-8 md:p-12 text-white space-y-6 sm:space-y-8">
               {/* Decorative Elements */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
               
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4">Contact Us Directly</h3>
-                <p className="text-white/80 mb-8">
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Contact Us Directly</h3>
+                <p className="text-white/80 mb-6 sm:mb-8 text-sm sm:text-base">
                   Have questions? Our team is ready to help you choose the right course for your career goals.
                 </p>
 

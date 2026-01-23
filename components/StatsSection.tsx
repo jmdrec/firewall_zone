@@ -63,7 +63,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background"></div>
       
@@ -73,18 +73,18 @@ export default function StatsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16 space-y-4"
+          className="text-center mb-10 sm:mb-12 lg:mb-16 space-y-3 sm:space-y-4"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             Why Choose <span className="bg-gradient-primary bg-clip-text text-transparent">Firewall Zone</span>?
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Trusted by thousands of students and professionals for career-transforming IT training
           </p>
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-14 lg:mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -94,7 +94,7 @@ export default function StatsSection() {
               transition={{ delay: index * 0.1 }}
               className="relative group"
             >
-              <div className="relative bg-card border border-border rounded-2xl p-8 hover:border-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
+              <div className="relative bg-card border border-border rounded-2xl p-6 sm:p-8 hover:border-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
                 {/* Gradient Background */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
                 
@@ -107,13 +107,13 @@ export default function StatsSection() {
 
                 {/* Content */}
                 <div className="relative space-y-2">
-                  <div className="text-5xl font-bold text-foreground group-hover:text-primary transition-colors">
+                  <div className="text-4xl sm:text-5xl font-bold text-foreground group-hover:text-primary transition-colors">
                     {stat.value}
                   </div>
-                  <div className="text-lg font-semibold text-foreground">
+                  <div className="text-base sm:text-lg font-semibold text-foreground">
                     {stat.label}
                   </div>
-                  <div className="text-sm text-gray-400">
+                  <div className="text-xs sm:text-sm text-gray-400">
                     {stat.description}
                   </div>
                 </div>
